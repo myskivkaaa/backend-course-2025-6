@@ -1,0 +1,32 @@
+{
+  "name": "backend-course-2025-6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myskivkaaa/backend-course-2025-6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myskivkaaa/backend-course-2025-6/issues"
+  },
+  "homepage": "https://github.com/myskivkaaa/backend-course-2025-6#readme",
+  "dependencies": {
+    "commander": "^14.0.2",
+    "express": "^5.1.0",
+    "multer": "^1.4.5-lts.1",
+    "superagent": "^10.2.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
