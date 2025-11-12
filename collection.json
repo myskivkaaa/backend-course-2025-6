@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "5cee614f-e545-4dbf-aba3-8c9c3cc14327",
+		"name": "Inventory Service Lab6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49987098",
+		"_collection_link": "https://victoria-myskiv-3246514.postman.co/workspace/%D0%92%D1%96%D0%BA%D1%82%D0%BE%D1%80%D1%96%D1%8F's-Workspace~71afe608-e1a9-4810-8e28-b3cecf2ea3c2/collection/49987098-5cee614f-e545-4dbf-aba3-8c9c3cc14327?action=share&source=collection_link&creator=49987098"
+	},
+	"item": [
+		{
+			"name": "POST /register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Victoria\",\r\n  \"age\": 21,\r\n  \"email\": \"victoria@example.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/register\n",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"register\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /inventory",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET /inventory/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/inventory/<ID>",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"inventory",
+						"<ID>"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /inventory/:id",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET /inventory/:id/photo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/inventory/ff3ffc98-7580-40eb-9a75-18967fe9b511/photo\n",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"inventory",
+						"ff3ffc98-7580-40eb-9a75-18967fe9b511",
+						"photo\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /inventory/:id/photo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/inventory/<ID>/photo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"inventory",
+						"<ID>",
+						"photo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /inventory/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "<ID>",
+							"type": "text"
+						},
+						{
+							"key": "has_photo",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/search",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "has_photo",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/search/6c137149-0270-4371-9125-a7b9f68e62aa",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"search",
+						"6c137149-0270-4371-9125-a7b9f68e62aa"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
